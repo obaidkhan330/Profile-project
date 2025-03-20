@@ -1,0 +1,7 @@
+name       = obaidullah faisal
+fathername = muhammad faisal
+Address    = Rawalkot
+phone      = 03109219890
+sub domain = ON-codex, Onova,OnoCraft
+Email      = obaidfaisal535@gmail.com 
+     
