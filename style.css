@@ -339,11 +339,16 @@ form{
 
 
  .card2{
-    margin-left: 620px;
+    margin-left: 650px;
+    width: 600px;
+    height: 20px;
+    display: block;
+    margin-bottom: 160px;
+    
  }
 
  .card2 h5{
-    margin-left: 200px;
+    margin-left: 10px;
     margin-top: 0;
   }
   .card2 p{
@@ -364,6 +369,18 @@ form{
    
 
   }
+  .card3 h5{
+    margin-left: 30px;
+  }
+  .card4 h5{
+    margin-left: 30px;
+  }
+  .card3 p{
+    margin-left: 30px;
+  }
+  .card4 p{
+    margin-bottom: 30px;
+  }
 
 
 
@@ -379,8 +396,6 @@ form{
   .accordion {
     width: 800px;
     max-width: 800px;
-    margin: auto;
-
     font-family: Arial, sans-serif;
     background: #f8f9fa;
 }
@@ -464,36 +479,69 @@ form{
         
     }
 
-    .swiper{
+    /* .swiper{
         width: 300px;
-        height: 350px;
+        height: 350px; */
     
     }
-    .prev,
+    /* .prev,
 .next{
     font-size: 1.2rem;
     padding: .5rem .6rem;
     border-radius: 50%;
+} */
+
+
+
+
+
+
+.card1{
+    margin-left: 4px;
+    margin-right: 10px;
+    width: 400px;
+    height: 3px;
+    display: block;
+    margin-bottom: 210px;
+
 }
-
-
-
-
-
-
-
-    .vertical-line{
-        display: none;
-    }
-    .card1{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+    
+  
     .card2{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 400px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+
 
     }
+    .card3{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 400px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+        
+       
+
+       
+    }
+    .card4{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 400px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+
+    }
+
+
+
+
     .p5{
         margin-left: 50px;
     }
@@ -505,15 +553,24 @@ form{
         margin-left: 100px;
     }
     .card2 h5{
+        margin-left: 95px;
+
+    }
+    .card3 h5{
         margin-left: 100px;
+    }
+    .card4 h5{
+        margin-left: 95px;
 
     }
     .accordion {
         width: 330px;
         margin: auto;
+        height: 50px;
     
         font-family: Arial, sans-serif;
         background: #f8f9fa;
+        margin-bottom: 150px;
     }
 
     .accordion-item {
@@ -533,12 +590,13 @@ form{
         border: none;
         outline: none;
         width: 330px;
+        height: 50px;
         text-align: left;
         transition: background 0.3s;
     }
     
     .accordion-header{
-        font-size: 9px;
+        font-size: 14px;
     }
 
     
@@ -546,33 +604,406 @@ form{
     
     
     
-}
 
 
-@media screen and (min-width:576px) and (max-width:991){
-   .vertical-line{
-    display: none;
+@media screen and (min-width:576px) and (max-width:767px) {
+/* .card1{
+    margin-left: 20px;
+        margin-right: 20px;
+        width: 570px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
 
-   }
-   .card2{
-    width: 2rem;
-    height: 1rem;
-   }
-
-   
-}
-
-
-
-
-
-
-
-
-
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background: #f8f9fa;
 } */
+.card1{
+    margin-left: 70px;
+    margin-right: 10px;
+    width: 480px;
+    height: 3px;
+    display: block; 
+    margin-bottom: 210px;
+
+}
+    
+  
+    .card2{
+        margin-left: 70px;
+        margin-right: 10px;
+        width: 480px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+
+
+    }
+    .card3{
+        margin-left: 90px;
+        margin-right: 10px;
+        width: 480px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+        
+       
+
+       
+    }
+    .card4{
+        margin-left: 80px;
+        margin-right: 10px;
+        width: 480px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+
+    }
+
+    .p5{
+        margin-left: 80px;
+    }
+    
+    .p6{
+        margin-left: 80px;
+    }
+
+
+    .accordion {
+        width: 450px;
+        margin: auto;
+        height: 70px;    
+        font-family: Arial, sans-serif;
+        background: #f8f9fa;
+        margin-bottom: 130px;
+    }
+
+    .accordion-item {
+        background: #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    
+    .accordion-header {
+        background: #007bff;
+        color: white;
+        padding: 7px;
+        font-size: 9px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 450px;
+        height: 70px;
+        text-align: left;
+        transition: background 0.3s;
+    }
+    
+    .accordion-header{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .card1{
+        margin-left: 270px;
+        margin-right: 20px;
+        width: 480px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+    
+    }
+        
+      
+    .card2{
+        margin-left: 80px;
+        margin-right: 10px;
+        width: 480px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+
+    }
+        .card3{
+            margin-left: 270px;
+            margin-right: 20px;
+            width: 480px;
+            height: 3px;
+            display: block;
+            margin-bottom: 210px;
+            
+           
+    
+           
+        }
+        .card4{
+            margin-left: 80px;
+            margin-right: 10px;
+            width: 480px;
+            height: 3px;
+            display: block;
+            margin-bottom: 210px;
+    
+        }
+        .card1 h5{
+            margin-left: 30px;
+        }
+        .card2 h5{
+            margin-left: 10px;
+        }
+    
+        .p5{
+            margin-left: 280px;
+        }
+        
+        .p6{
+            margin-left: 80px;
+        }
+    
+    
+        .accordion {
+            width: 550px;
+            margin: auto;
+            height: 80px;
+        
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            margin-bottom: 150px;
+        }
+    
+        .accordion-item {
+            background: #fff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            background: #007bff;
+            color: white;
+            padding: 7px;
+            font-size: 10px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            width: 550px;
+            height: 80px;
+            text-align: left;
+            transition: background 0.3s;
+        }
+        
+        .accordion-header{
+            font-size: 20px;
+        }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+    .card1{
+        margin-left: 570px;
+        margin-right: 10px;
+        width: 400px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+    
+    }
+        
+      
+    .card2{
+        margin-left: 80px;
+        margin-right: 10px;
+        width: 400px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+
+    }
+        .card3{
+            margin-left: 570px;
+            margin-right: 20px;
+            width: 400px;
+            height: 3px;
+            display: block;
+            margin-bottom: 210px;
+            
+           
+    
+           
+        }
+        .card4{
+            margin-left: 80px;
+            margin-right: 10px;
+            width: 400px;
+            height: 3px;
+            display: block;
+            margin-bottom: 210px;
+    
+        }
+        .card1 h5{
+            margin-left: 30px;
+        }
+        .card2 h5{
+            margin-left: 10px;
+        }
+    
+        .p5{
+            margin-left: 580px;
+        }
+        
+        .p6{
+            margin-left: 80px;
+        }
+    
+    
+        .accordion {
+            width: 650px;
+            margin: auto;
+            height: 90px;
+        
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            margin-bottom: 180px;
+        }
+    
+        .accordion-item {
+            background: #fff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            background: #007bff;
+            color: white;
+            padding: 7px;
+            font-size: 10px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            width: 6ab50px;
+            height: 90px;
+            text-align: left;
+            transition: background 0.3s;
+        }
+        
+        .accordion-header{
+            font-size: 25px;
+        }
+        .about-me{
+            width: 25.5rem;
+        }
+
+
+
+}
+@media screen and (min-width:1199px){
+    .card1{
+        margin-left: 510px;
+        margin-right: 10px;
+        width: 500px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+    
+    }
+        
+      
+    .card2{
+        margin-left: 70px;
+        margin-right: 10px;
+        width: 500px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+
+    }
+        .card3{
+            margin-left: 570px;
+            margin-right: 20px;
+            width: 500px;
+            height: 3px;
+            display: block;
+            margin-bottom: 210px;
+            
+           
+    
+           
+        }
+        .card4{
+            margin-left: 70px;
+            margin-right: 10px;
+            width: 500px;
+            height: 3px;
+            display: block;
+            margin-bottom: 210px;
+    
+        }
+        .card1 h5{
+            margin-left: 30px;
+        }
+        .card2 h5{
+            margin-left: 10px;
+        }
+    
+        .p5{
+            margin-left:830px;
+        }
+        
+        .p6{
+            margin-left: 80px;
+        }
+    
+    
+        .accordion {
+            width: 850px;
+            margin: auto;
+            height: 90px;
+        
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            margin-bottom: 180px;
+        }
+    
+        .accordion-item {
+            background: #fff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            background: #007bff;
+            color: white;
+            padding: 7px;
+            font-size: 10px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            width: 850px;
+            height: 90px;
+            text-align: left;
+            transition: background 0.3s;
+        }
+        
+        .accordion-header{
+            font-size: 25px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
 
