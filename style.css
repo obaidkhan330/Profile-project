@@ -11,7 +11,7 @@
 
 
 :root{
-    --green-clr: #0278fe;
+    --green-clr: #05f053;
     --gray-clr: #898989;
     --dark-blue-clr: #171c22;
 }
@@ -369,6 +369,7 @@ form{
    
 
   }
+  
   .card3 h5{
     margin-left: 30px;
   }
@@ -394,7 +395,7 @@ form{
 
 
   .accordion {
-    width: 800px;
+    width: 750px;
     max-width: 800px;
     font-family: Arial, sans-serif;
     background: #f8f9fa;
@@ -409,21 +410,21 @@ form{
 }
 
 .accordion-header {
-    background: #007bff;
+    background: var(--green-clr);
     color: white;
     padding: 15px;
     font-size: 18px;
     cursor: pointer;
     border: none;
     outline: none;
-    width: 800px;
+    width: 750px;
     text-align: left;
     transition: background 0.3s;
 }
 
 
 .accordion-header:hover {
-    background: #02172e;
+    background: var(--green-clr);
 }
 
 .accordion-content {
@@ -456,6 +457,11 @@ form{
 
 
 @media screen and (max-width:575px) {
+
+
+
+    
+    
     h1{
         font-size: 2.8rem;
     }
@@ -469,6 +475,7 @@ form{
     }
     .about-me{
         width: 18rem;
+        margin-left: 80px;
     }
     form{
         width: 18rem;
@@ -479,17 +486,9 @@ form{
         
     }
 
-    /* .swiper{
-        width: 300px;
-        height: 350px; */
     
-    }
-    /* .prev,
-.next{
-    font-size: 1.2rem;
-    padding: .5rem .6rem;
-    border-radius: 50%;
-} */
+    
+    
 
 
 
@@ -497,7 +496,7 @@ form{
 
 
 .card1{
-    margin-left: 4px;
+    margin-left: 40px;
     margin-right: 10px;
     width: 400px;
     height: 3px;
@@ -508,7 +507,7 @@ form{
     
   
     .card2{
-        margin-left: 10px;
+        margin-left: 40px;
         margin-right: 10px;
         width: 400px;
         height: 3px;
@@ -518,7 +517,7 @@ form{
 
     }
     .card3{
-        margin-left: 10px;
+        margin-left: 40px;
         margin-right: 10px;
         width: 400px;
         height: 3px;
@@ -530,7 +529,7 @@ form{
        
     }
     .card4{
-        margin-left: 10px;
+        margin-left: 40px;
         margin-right: 10px;
         width: 400px;
         height: 3px;
@@ -582,7 +581,7 @@ form{
     }
     
     .accordion-header {
-        background: #007bff;
+        background :#02172e;
         color: white;
         padding: 7px;
         font-size: 9px;
@@ -596,28 +595,26 @@ form{
     }
     
     .accordion-header{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     
-    
+}    
     
     
     
 
 
 @media screen and (min-width:576px) and (max-width:767px) {
-/* .card1{
-    margin-left: 20px;
-        margin-right: 20px;
-        width: 570px;
-        height: 3px;
-        display: block;
-        margin-bottom: 210px;
 
-} */
+
+    .about-me{
+        width: 25rem;
+        margin-left: 50px;
+
+    }
 .card1{
-    margin-left: 70px;
+    margin-left: 20px;
     margin-right: 10px;
     width: 480px;
     height: 3px;
@@ -686,7 +683,7 @@ form{
     }
     
     .accordion-header {
-        background: #007bff;
+        background: #02172e;
         color: white;
         padding: 7px;
         font-size: 9px;
@@ -782,7 +779,7 @@ form{
         }
         
         .accordion-header {
-            background: #007bff;
+            background: #02172e;
             color: white;
             padding: 7px;
             font-size: 10px;
@@ -878,7 +875,7 @@ form{
         }
         
         .accordion-header {
-            background: #007bff;
+            background: #02172e;
             color: white;
             padding: 7px;
             font-size: 10px;
@@ -901,7 +898,7 @@ form{
 
 
 }
-@media screen and (min-width:1199px){
+@media screen and (min-width:1200px){
     .card1{
         margin-left: 510px;
         margin-right: 10px;
@@ -919,7 +916,7 @@ form{
         width: 500px;
         height: 3px;
         display: block;
-        margin-bottom: 210px;
+        margin-bottom: 200px;
 
     }
         .card3{
@@ -960,9 +957,9 @@ form{
     
     
         .accordion {
-            width: 850px;
+            width: 650px;
             margin: auto;
-            height: 90px;
+            height: 210px;
         
             font-family: Arial, sans-serif;
             background: #f8f9fa;
@@ -978,14 +975,15 @@ form{
         }
         
         .accordion-header {
-            background: #007bff;
+           background: #02172e;
+    
             color: white;
             padding: 7px;
             font-size: 10px;
             cursor: pointer;
             border: none;
             outline: none;
-            width: 850px;
+            width: 650px;
             height: 90px;
             text-align: left;
             transition: background 0.3s;
