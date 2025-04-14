@@ -11,7 +11,7 @@
 
 
 :root{
-    --green-clr: #05f053;
+    --green-clr: #007BFF;
     --gray-clr: #898989;
     --dark-blue-clr: #171c22;
 }
@@ -386,7 +386,7 @@ form{
 
 
   .card{
-    border: 1px solid var(--green-clr);
+    border: 2px solid #007BFF;
     
   }
 
@@ -475,7 +475,7 @@ form{
     }
     .about-me{
         width: 18rem;
-        margin-left: 80px;
+        margin-left: 110px;
     }
     form{
         width: 18rem;
@@ -496,9 +496,9 @@ form{
 
 
 .card1{
-    margin-left: 40px;
+    margin-left: 110px;
     margin-right: 10px;
-    width: 400px;
+    width: 300px;
     height: 3px;
     display: block;
     margin-bottom: 210px;
@@ -507,34 +507,34 @@ form{
     
   
     .card2{
-        margin-left: 40px;
+        margin-left: 110px;
         margin-right: 10px;
-        width: 400px;
+        width: 300px;
         height: 3px;
         display: block;
-        margin-bottom: 210px;
-
+        margin-bottom: 250px;
 
     }
     .card3{
-        margin-left: 40px;
+        margin-left: 110px;
         margin-right: 10px;
-        width: 400px;
+        width: 300px;
         height: 3px;
         display: block;
-        margin-bottom: 210px;
+        margin-bottom: 220px;
         
        
 
        
     }
     .card4{
-        margin-left: 40px;
+        margin-left: 110px;
         margin-right: 10px;
-        width: 400px;
+        width: 300px;
         height: 3px;
         display: block;
-        margin-bottom: 210px;
+        margin-bottom: 250px;
+        /* padding: 10px 20px; */
 
     }
 
@@ -549,17 +549,17 @@ form{
         margin-left: 50px;
     }
     .card1 h5{
-        margin-left: 100px;
+        margin-left: 70px;
     }
     .card2 h5{
-        margin-left: 95px;
+        margin-left: 70px;
 
     }
     .card3 h5{
-        margin-left: 100px;
+        margin-left: 70px;
     }
     .card4 h5{
-        margin-left: 95px;
+        margin-left: 70px;
 
     }
     .accordion {
@@ -625,7 +625,7 @@ form{
     
   
     .card2{
-        margin-left: 70px;
+        margin-left: 30px;
         margin-right: 10px;
         width: 480px;
         height: 3px;
@@ -635,7 +635,7 @@ form{
 
     }
     .card3{
-        margin-left: 90px;
+        margin-left: 30px;
         margin-right: 10px;
         width: 480px;
         height: 3px;
@@ -647,21 +647,21 @@ form{
        
     }
     .card4{
-        margin-left: 80px;
+        margin-left: 5%;
         margin-right: 10px;
         width: 480px;
         height: 3px;
         display: block;
-        margin-bottom: 210px;
+        margin-bottom: 250px;
 
     }
 
     .p5{
-        margin-left: 80px;
+        margin-left: 40px;
     }
     
     .p6{
-        margin-left: 80px;
+        margin-left: 40px; 
     }
 
 
@@ -937,7 +937,7 @@ form{
             width: 500px;
             height: 3px;
             display: block;
-            margin-bottom: 210px;
+            margin-bottom: 240px;
     
         }
         .card1 h5{
@@ -996,12 +996,4 @@ form{
 
 
 }
-
-
-
-
-
-
-
-
 
