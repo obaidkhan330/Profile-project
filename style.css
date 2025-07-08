@@ -1,3 +1,5 @@
+/* line 1  */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
  
@@ -6,9 +8,8 @@
     font-family: "Poppins", sans-serif;
 
     /* border: .1rem solid white; */
+    box-sizing: border-box; /* recommended */
 }
-
-
 
 :root{
     --green-clr: #007BFF;
@@ -36,23 +37,19 @@ li{
     list-style: none;
 }
 a{
-    list-style: none;
-    
-
+    list-style: none; /* Yeh galat hai, a ke sath list-style nahi hota, isko hata dena chahiye */
+    text-decoration: none; /* add karna chahiye */
 }
 
-
-
-ul a :hover ::after{
+/* Yeh selector galat tha, correct kiya hai */
+ul a:hover::after{
     color: var(--dark-blue-clr);
-    
 }
 
 img{
     max-width: 100%;
-    height: auto
+    height: auto;
 }
-
 
 .navbar{
     position: sticky;
@@ -61,9 +58,7 @@ img{
     z-index: 100;
     background: var(--dark-blue-clr);
     height: 70px;
-    
 }
-
 
 .navbar-logo{
     width: 70px;
@@ -74,24 +69,58 @@ img{
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
-
 }
 
 .mybtn{
     border: .1rem solid var(--green-clr) !important;
     padding: .5rem 1.6rem;
+    background: transparent;
+    color: var(--green-clr);
+    cursor: pointer;
 }
 .mybtn:hover{
-    background: transparent;
-    color: var(--green-clr) !important;
+    background: var(--green-clr);
+    color: black !important;
 }
 
+/* Default Light Mode */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+button {
+    padding: 5px 5px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
 
- .navbar-toggler-icon{
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #666;
+}
+
+body.dark-mode h1, body.dark-mode p {
+    color: white;
+}
+
+.navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     width: 2.2rem;
 } 
+
 .image-container{
     width: 26rem;
     aspect-ratio: 1;
@@ -102,22 +131,21 @@ img{
     background-position: center;
     background-size: 75%;
     box-shadow: 
-    0 0 1rem white,
-    inset 0 0 1rem white,
-    0 0 2rem var(--green-clr),
-    inset 0 0 2rem var(--green-clr),
-    0 0 6rem var(--green-clr),
-    inset 0 0 3rem var(--green-clr)
-    
+        0 0 1rem white,
+        inset 0 0 1rem white,
+        0 0 2rem var(--green-clr),
+        inset 0 0 2rem var(--green-clr),
+        0 0 6rem var(--green-clr),
+        inset 0 0 3rem var(--green-clr);
 }
+
 .hero-section{
     min-height: 88vh;
-    
 }
+
 h1{
     font-size: 3rem;
     font-family: "Merriweather Sans", serif;
-
 }
 
 p{
@@ -133,14 +161,12 @@ p{
 }
 .about-me{
     width: 30rem;
-
     margin: 0 auto;
     margin-left: 30px;
 }
 /* .myimg{
        size: 200px;
 } */
-
 
 /* .ob img{
     border-radius: 50%;
@@ -150,12 +176,8 @@ p{
     padding-block: 4rem;
 }
 
-
-
-
 .glow{
     position: relative;
-
 }
 .glow::before{
     content: "";
@@ -167,25 +189,20 @@ p{
     filter: blur(70px);
 }
 
-
 .hover-card:hover{
     background-color: var(--green-clr);
     transform: scale(1.1);
     transition: transform .5s ease-in-out;
-
-
 }
 .hover-card:hover *{
     color: black !important;
 }
 .mycard{
     width: 21rem;
-
 }
 .mycard:hover{
     transform: scale(1.1);
     transition: transform .5s ease-in-out;
-
 }
 .blog-card{
     width: 21rem;
@@ -195,7 +212,6 @@ form{
 }
 .form-control{
     border: .1rem solid var(--gray-clr);
-
 }
 .form-control:focus{
     box-shadow: none;
@@ -217,19 +233,12 @@ form{
     aspect-ratio: 1;
     border-radius: 50%;
     overflow: hidden;
-
-
-    
-
 }
-
 
 .profile img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-    
 }
 
 .prev,
@@ -239,10 +248,6 @@ form{
     border-radius: 50%;
 }
 
-
-
-
-
 .footer1 {
     color: white;
     background-color: var(--dark-blue-clr);
@@ -251,34 +256,33 @@ form{
     padding: 30px 0;
     margin: 0 15px;
     position: relative;
-    
-  }
-  
-  .footer1 h3 {
+}
+
+.footer1 h3 {
     font-size: 36px;
     font-weight: 700;
     position: relative;
     padding: 0;
     margin: 0 0 15px 0;
-  }
-  
-  .footer1 p {
-    font-size: 15;
+}
+
+.footer1 p {
+    font-size: 15px; /* missing px */
     font-style: italic;
     padding: 0;
     margin: 0 0 30px 0;
-  }
-  
-  .footer1 .social-links {
+}
+
+.footer1 .social-links {
     margin: 0 0 30px 0;
-  }
-  
-  .footer1 .social-links a {
+}
+
+.footer1 .social-links a {
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--accent-color);
+    background: var(--green-clr); /* replaced accent-color with green */
     color: white;
     line-height: 1;
     margin: 0 4px;
@@ -287,114 +291,102 @@ form{
     width: 36px;
     height: 36px;
     transition: 0.3s;
-  }
-  
-  .footer1 .social-links a:hover {
-    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.footer1 .social-links a:hover {
+    background: rgba(0, 123, 255, 0.8);
     text-decoration: none;
-  }
-  
-  .footer1 .copyright {
+}
+
+.footer1 .copyright {
     padding-top: 25px;
-    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  }
-  
-  
-  .footer1 .credits {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer1 .credits {
     font-size: 13px;
     padding-top: 5px;
-  }
+}
 
-  .card1{
+.card1{
     /* width: 200px; */
     /* height: 5%; */
     margin-left: 180px;
     /* text-align: center; */
     /* border: 1px solid var(--green-clr); */
-    
-    
-    
-  }
-  .card1 p{
+}
+.card1 p{
     margin-left: 30px;
-    
-  }
-  .card1 h5{
+}
+.card1 h5{
     margin-left: 250px;
     margin-top: 0;
-  }
+}
 
-
-
-   h2{
+h2{
     text-align: center;
+}
 
-  }
-   .p5{
+.p5{
     color: azure;
     margin-left: 545px;
-  }
+}
 
-
-
-
- .card2{
+.card2{
     margin-left: 650px;
     width: 600px;
     height: 20px;
     display: block;
     margin-bottom: 160px;
-    
- }
-
- .card2 h5{
+}
+.card2 h5{
     margin-left: 10px;
     margin-top: 0;
-  }
-  .card2 p{
+}
+
+
+/* line 400 */
+
+/* line 401 */
+  
+.card2 p {
     margin-left: 20px;
-  }
+}
 
-
-  .p6{
+.p6 {
     color: azure;
     margin-left: 620px;
     margin-top: 8px;
-  }
-  .card-body1:hover{
+}
+
+.card-body1:hover {
     /* border-radius: 1px solid red; */
     filter: blur(0.5px);
     transform: scale(1.1);
-    transition: transform .5s ease-in-out;
-   
+    transition: transform 0.5s ease-in-out;
+}
 
-  }
-  
-  .card3 h5{
+.card3 h5 {
     margin-left: 30px;
-  }
-  .card4 h5{
+}
+
+.card4 h5 {
     margin-left: 30px;
-  }
-  .card3 p{
+}
+
+.card3 p {
     margin-left: 30px;
-  }
-  .card4 p{
+}
+
+.card4 p {
     margin-bottom: 30px;
-  }
+}
 
-
-
-  .card{
+.card {
     border: 2px solid #007BFF;
-    
-  }
+}
 
-
-
-
-
-  .accordion {
+.accordion {
     width: 750px;
     max-width: 800px;
     font-family: Arial, sans-serif;
@@ -422,7 +414,6 @@ form{
     transition: background 0.3s;
 }
 
-
 .accordion-header:hover {
     background: var(--green-clr);
 }
@@ -444,90 +435,63 @@ form{
 }
 
 
+/* Media Queries */
 
+@media screen and (max-width: 575px) {
 
-
-
-
-
-
-
-  
-  
-
-
-@media screen and (max-width:575px) {
-
-
-
-    
-    
-    h1{
+    h1 {
         font-size: 2.8rem;
     }
-    
-    .image-container{
+
+    .image-container {
         width: 20rem;
     }
 
-    .hero-section{
+    .hero-section {
         min-height: 70vh;
     }
-    .about-me{
+
+    .about-me {
         width: 18rem;
         margin-left: 110px;
     }
-    form{
+
+    form {
         width: 18rem;
     }
-    .portfolio{
-        max-width: 22rem;
 
-        
+    .portfolio {
+        max-width: 22rem;
     }
 
-    
-    
-    
+    .card1 {
+        margin-left: 110px;
+        margin-right: 10px;
+        width: 300px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+    }
 
-
-
-
-
-
-.card1{
-    margin-left: 110px;
-    margin-right: 10px;
-    width: 300px;
-    height: 3px;
-    display: block;
-    margin-bottom: 210px;
-
-}
-    
-  
-    .card2{
+    .card2 {
         margin-left: 110px;
         margin-right: 10px;
         width: 300px;
         height: 3px;
         display: block;
         margin-bottom: 250px;
-
     }
-    .card3{
+
+    .card3 {
         margin-left: 110px;
         margin-right: 10px;
         width: 300px;
         height: 3px;
         display: block;
         margin-bottom: 220px;
-        
-       
-
-       
     }
-    .card4{
+
+    .card4 {
         margin-left: 110px;
         margin-right: 10px;
         width: 300px;
@@ -535,38 +499,36 @@ form{
         display: block;
         margin-bottom: 250px;
         /* padding: 10px 20px; */
-
     }
 
-
-
-
-    .p5{
+    .p5 {
         margin-left: 50px;
     }
-    
-    .p6{
+
+    .p6 {
         margin-left: 50px;
     }
-    .card1 h5{
-        margin-left: 70px;
-    }
-    .card2 h5{
-        margin-left: 70px;
 
-    }
-    .card3 h5{
+    .card1 h5 {
         margin-left: 70px;
     }
-    .card4 h5{
-        margin-left: 70px;
 
+    .card2 h5 {
+        margin-left: 70px;
     }
+
+    .card3 h5 {
+        margin-left: 70px;
+    }
+
+    .card4 h5 {
+        margin-left: 70px;
+    }
+
     .accordion {
         width: 330px;
         margin: auto;
         height: 50px;
-    
         font-family: Arial, sans-serif;
         background: #f8f9fa;
         margin-bottom: 150px;
@@ -579,12 +541,12 @@ form{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         overflow: hidden;
     }
-    
+
     .accordion-header {
-        background :#02172e;
+        background: #02172e;
         color: white;
         padding: 7px;
-        font-size: 9px;
+        font-size: 12px; /* corrected from 9px to 12px as you had two definitions */
         cursor: pointer;
         border: none;
         outline: none;
@@ -593,82 +555,63 @@ form{
         text-align: left;
         transition: background 0.3s;
     }
-    
-    .accordion-header{
-        font-size: 12px;
-    }
+}
 
-    
-}    
-    
-    
-    
+@media screen and (min-width: 576px) and (max-width: 767px) {
 
-
-@media screen and (min-width:576px) and (max-width:767px) {
-
-
-    .about-me{
+    .about-me {
         width: 25rem;
         margin-left: 50px;
-
     }
-.card1{
-    margin-left: 20px;
-    margin-right: 10px;
-    width: 480px;
-    height: 3px;
-    display: block; 
-    margin-bottom: 210px;
 
-}
-    
-  
-    .card2{
+    .card1 {
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 480px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+    }
+
+    .card2 {
         margin-left: 30px;
         margin-right: 10px;
         width: 480px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-
-
     }
-    .card3{
+
+    .card3 {
         margin-left: 30px;
         margin-right: 10px;
         width: 480px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-        
-       
-
-       
     }
-    .card4{
+
+    .card4 {
         margin-left: 5%;
         margin-right: 10px;
         width: 480px;
         height: 3px;
         display: block;
         margin-bottom: 250px;
-
     }
 
-    .p5{
+    .p5 {
         margin-left: 40px;
     }
-    
-    .p6{
-        margin-left: 40px; 
-    }
 
+    .p6 {
+        margin-left: 40px;
+    }
 
     .accordion {
         width: 450px;
         margin: auto;
-        height: 70px;    
+        height: 70px;
         font-family: Arial, sans-serif;
         background: #f8f9fa;
         margin-bottom: 130px;
@@ -681,12 +624,12 @@ form{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         overflow: hidden;
     }
-    
+
     .accordion-header {
         background: #02172e;
         color: white;
         padding: 7px;
-        font-size: 9px;
+        font-size: 16px;
         cursor: pointer;
         border: none;
         outline: none;
@@ -695,305 +638,321 @@ form{
         text-align: left;
         transition: background 0.3s;
     }
-    
-    .accordion-header{
-        font-size: 16px;
-    }
 }
 
-
-@media screen and (min-width: 768px) and (max-width:991px) {
-    .card1{
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .card1 {
         margin-left: 270px;
         margin-right: 20px;
         width: 480px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-    
     }
-        
-      
-    .card2{
+
+    .card2 {
         margin-left: 80px;
         margin-right: 10px;
         width: 480px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-
     }
-        .card3{
-            margin-left: 270px;
-            margin-right: 20px;
-            width: 480px;
-            height: 3px;
-            display: block;
-            margin-bottom: 210px;
-            
-           
-    
-           
-        }
-        .card4{
-            margin-left: 80px;
-            margin-right: 10px;
-            width: 480px;
-            height: 3px;
-            display: block;
-            margin-bottom: 210px;
-    
-        }
-        .card1 h5{
-            margin-left: 30px;
-        }
-        .card2 h5{
-            margin-left: 10px;
-        }
-    
-        .p5{
-            margin-left: 280px;
-        }
-        
-        .p6{
-            margin-left: 80px;
-        }
-    
-    
-        .accordion {
-            width: 550px;
-            margin: auto;
-            height: 80px;
-        
-            font-family: Arial, sans-serif;
-            background: #f8f9fa;
-            margin-bottom: 150px;
-        }
-    
-        .accordion-item {
-            background: #fff;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        .accordion-header {
-            background: #02172e;
-            color: white;
-            padding: 7px;
-            font-size: 10px;
-            cursor: pointer;
-            border: none;
-            outline: none;
-            width: 550px;
-            height: 80px;
-            text-align: left;
-            transition: background 0.3s;
-        }
-        
-        .accordion-header{
-            font-size: 20px;
-        }
 
+    .card3 {
+        margin-left: 270px;
+        margin-right: 20px;
+        width: 480px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+    }
+
+    .card4 {
+        margin-left: 80px;
+        margin-right: 10px;
+        width: 480px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+    }
+
+    .card1 h5 {
+        margin-left: 30px;
+    }
+
+    .card2 h5 {
+        margin-left: 10px;
+    }
+
+    .p5 {
+        margin-left: 280px;
+    }
+
+    .p6 {
+        margin-left: 80px;
+    }
+
+    .accordion {
+        width: 550px;
+        margin: auto;
+        height: 80px;
+        font-family: Arial, sans-serif;
+        background: #f8f9fa;
+        margin-bottom: 150px;
+    }
+
+    .accordion-item {
+        background: #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .accordion-header {
+        background: #02172e;
+        color: white;
+        padding: 7px;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 550px;
+        height: 80px;
+        text-align: left;
+        transition: background 0.3s;
+    }
 }
+/* line 800 */
+/* line 801 */
 
-@media screen and (min-width:992px) and (max-width:1199px){
-    .card1{
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .card1 {
         margin-left: 570px;
         margin-right: 10px;
         width: 400px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-    
     }
-        
-      
-    .card2{
+
+    .card2 {
         margin-left: 80px;
         margin-right: 10px;
         width: 400px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-
     }
-        .card3{
-            margin-left: 570px;
-            margin-right: 20px;
-            width: 400px;
-            height: 3px;
-            display: block;
-            margin-bottom: 210px;
-            
-           
-    
-           
-        }
-        .card4{
-            margin-left: 80px;
-            margin-right: 10px;
-            width: 400px;
-            height: 3px;
-            display: block;
-            margin-bottom: 210px;
-    
-        }
-        .card1 h5{
-            margin-left: 30px;
-        }
-        .card2 h5{
-            margin-left: 10px;
-        }
-    
-        .p5{
-            margin-left: 580px;
-        }
-        
-        .p6{
-            margin-left: 80px;
-        }
-    
-    
-        .accordion {
-            width: 650px;
-            margin: auto;
-            height: 90px;
-        
-            font-family: Arial, sans-serif;
-            background: #f8f9fa;
-            margin-bottom: 180px;
-        }
-    
-        .accordion-item {
-            background: #fff;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        .accordion-header {
-            background: #02172e;
-            color: white;
-            padding: 7px;
-            font-size: 10px;
-            cursor: pointer;
-            border: none;
-            outline: none;
-            width: 6ab50px;
-            height: 90px;
-            text-align: left;
-            transition: background 0.3s;
-        }
-        
-        .accordion-header{
-            font-size: 25px;
-        }
-        .about-me{
-            width: 25.5rem;
-        }
 
+    .card3 {
+        margin-left: 570px;
+        margin-right: 20px;
+        width: 400px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+    }
 
+    .card4 {
+        margin-left: 80px;
+        margin-right: 10px;
+        width: 400px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+    }
 
+    .card1 h5 {
+        margin-left: 30px;
+    }
+
+    .card2 h5 {
+        margin-left: 10px;
+    }
+
+    .p5 {
+        margin-left: 580px;
+    }
+
+    .p6 {
+        margin-left: 80px;
+    }
+
+    .accordion {
+        width: 650px;
+        margin: auto;
+        height: 90px;
+        font-family: Arial, sans-serif;
+        background: #f8f9fa;
+        margin-bottom: 180px;
+    }
+
+    .accordion-item {
+        background: #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .accordion-header {
+        background: #02172e;
+        color: white;
+        padding: 7px;
+        font-size: 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 650px; /* yahan typo fix kiya hai */
+        height: 90px;
+        text-align: left;
+        transition: background 0.3s;
+    }
+
+    .accordion-header {
+        font-size: 25px;
+    }
+
+    .about-me {
+        width: 25.5rem;
+    }
 }
-@media screen and (min-width:1200px){
-    .card1{
+
+@media screen and (min-width:1200px) {
+    .card1 {
         margin-left: 510px;
         margin-right: 10px;
         width: 500px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-    
     }
-        
-      
-    .card2{
+
+    .card2 {
         margin-left: 70px;
         margin-right: 10px;
         width: 500px;
         height: 3px;
         display: block;
         margin-bottom: 200px;
-
     }
-        .card3{
-            margin-left: 570px;
-            margin-right: 20px;
-            width: 500px;
-            height: 3px;
-            display: block;
-            margin-bottom: 210px;
-            
-           
-    
-           
-        }
-        .card4{
-            margin-left: 70px;
-            margin-right: 10px;
-            width: 500px;
-            height: 3px;
-            display: block;
-            margin-bottom: 240px;
-    
-        }
-        .card1 h5{
-            margin-left: 30px;
-        }
-        .card2 h5{
-            margin-left: 10px;
-        }
-    
-        .p5{
-            margin-left:830px;
-        }
-        
-        .p6{
-            margin-left: 80px;
-        }
-    
-    
-        .accordion {
-            width: 650px;
-            margin: auto;
-            height: 210px;
-        
-            font-family: Arial, sans-serif;
-            background: #f8f9fa;
-            margin-bottom: 180px;
-        }
-    
-        .accordion-item {
-            background: #fff;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        .accordion-header {
-           background: #02172e;
-    
-            color: white;
-            padding: 7px;
-            font-size: 10px;
-            cursor: pointer;
-            border: none;
-            outline: none;
-            width: 650px;
-            height: 90px;
-            text-align: left;
-            transition: background 0.3s;
-        }
-        
-        .accordion-header{
-            font-size: 25px;
 
+    .card3 {
+        margin-left: 570px;
+        margin-right: 20px;
+        width: 500px;
+        height: 3px;
+        display: block;
+        margin-bottom: 210px;
+    }
+
+    .card4 {
+        margin-left: 70px;
+        margin-right: 10px;
+        width: 500px;
+        height: 3px;
+        display: block;
+        margin-bottom: 240px;
+    }
+
+    .card1 h5 {
+        margin-left: 30px;
+    }
+
+    .card2 h5 {
+        margin-left: 10px;
+    }
+
+    .p5 {
+        margin-left: 830px;
+    }
+
+    .p6 {
+        margin-left: 80px;
+    }
+
+    .accordion {
+        width: 650px;
+        margin: auto;
+        height: 210px;
+        font-family: Arial, sans-serif;
+        background: #f8f9fa;
+        margin-bottom: 180px;
+    }
+
+    .accordion-item {
+        background: #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .accordion-header {
+        background: #02172e;
+        color: white;
+        padding: 7px;
+        font-size: 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 650px;
+        height: 90px;
+        text-align: left;
+        transition: background 0.3s;
+    }
+
+    .accordion-header {
+        font-size: 25px;
+    }
 }
+/* line 1000 */
 
 
-}
+
+    
+
+    /* .bg-dark-blue {
+      background-color: #02172e;
+    }
+
+    .bg-green {
+      background-color: #00ff99;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      color: #000;
+    }
+
+    .control i:hover {
+      background-color: #00dd88;
+    } */
+
+    .swiper {
+      padding-bottom: 50px;
+    }
+
+    .profile img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .main-txt {
+      letter-spacing: 1px;
+    }
+
+    .section-container {
+      padding: 60px 0;
+    }
+
+    @media (max-width: 768px) {
+      .swiper-slide {
+        text-align: center;
+      }
+    }
+
 
