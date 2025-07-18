@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-/* line 1  */
 
-=======
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
+/* line 1  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
  
@@ -11,20 +8,19 @@
     font-family: "Poppins", sans-serif;
 
     /* border: .1rem solid white; */
-<<<<<<< HEAD
+
     box-sizing: border-box; /* recommended */
 }
 
 :root{
     --green-clr: #007BFF;
-=======
+
 }
 
 
 
 :root{
     --green-clr: #05f053;
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
     --gray-clr: #898989;
     --dark-blue-clr: #171c22;
 }
@@ -49,7 +45,6 @@ li{
     list-style: none;
 }
 a{
-<<<<<<< HEAD
     list-style: none; /* Yeh galat hai, a ke sath list-style nahi hota, isko hata dena chahiye */
     text-decoration: none; /* add karna chahiye */
 }
@@ -57,7 +52,6 @@ a{
 /* Yeh selector galat tha, correct kiya hai */
 ul a:hover::after{
     color: var(--dark-blue-clr);
-=======
     list-style: none;
     
 
@@ -68,21 +62,15 @@ ul a:hover::after{
 ul a :hover ::after{
     color: var(--dark-blue-clr);
     
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 }
 
 img{
     max-width: 100%;
-<<<<<<< HEAD
     height: auto;
 }
 
-=======
-    height: auto
-}
 
 
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 .navbar{
     position: sticky;
     top: 0;
@@ -90,15 +78,11 @@ img{
     z-index: 100;
     background: var(--dark-blue-clr);
     height: 70px;
-<<<<<<< HEAD
 }
 
-=======
     
-}
 
 
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 .navbar-logo{
     width: 70px;
     height: 70px;
@@ -108,16 +92,12 @@ img{
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
-<<<<<<< HEAD
-=======
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 }
 
 .mybtn{
     border: .1rem solid var(--green-clr) !important;
     padding: .5rem 1.6rem;
-<<<<<<< HEAD
+
     background: transparent;
     color: var(--green-clr);
     cursor: pointer;
@@ -165,8 +145,6 @@ body.dark-mode h1, body.dark-mode p {
     width: 2.2rem;
 } 
 
-=======
-}
 .mybtn:hover{
     background: transparent;
     color: var(--green-clr) !important;
@@ -178,8 +156,7 @@ body.dark-mode h1, body.dark-mode p {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     width: 2.2rem;
 } 
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
-.image-container{
+.image-container {
     width: 26rem;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -188,8 +165,8 @@ body.dark-mode h1, body.dark-mode p {
     background-image: url(images/profile2.jpeg);
     background-position: center;
     background-size: 75%;
+    background-repeat: no-repeat;
     box-shadow: 
-<<<<<<< HEAD
         0 0 1rem white,
         inset 0 0 1rem white,
         0 0 2rem var(--green-clr),
@@ -198,6 +175,7 @@ body.dark-mode h1, body.dark-mode p {
         inset 0 0 3rem var(--green-clr);
 }
 
+
 .hero-section{
     min-height: 88vh;
 }
@@ -205,7 +183,6 @@ body.dark-mode h1, body.dark-mode p {
 h1{
     font-size: 3rem;
     font-family: "Merriweather Sans", serif;
-=======
     0 0 1rem white,
     inset 0 0 1rem white,
     0 0 2rem var(--green-clr),
@@ -222,7 +199,6 @@ h1{
     font-size: 3rem;
     font-family: "Merriweather Sans", serif;
 
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 }
 
 p{
@@ -238,10 +214,6 @@ p{
 }
 .about-me{
     width: 30rem;
-<<<<<<< HEAD
-=======
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
     margin: 0 auto;
     margin-left: 30px;
 }
@@ -249,10 +221,6 @@ p{
        size: 200px;
 } */
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 /* .ob img{
     border-radius: 50%;
 }    */
@@ -261,18 +229,8 @@ p{
     padding-block: 4rem;
 }
 
-<<<<<<< HEAD
 .glow{
-    position: relative;
-=======
-
-
-
-.glow{
-    position: relative;
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
-}
+    position: relative;}
 .glow::before{
     content: "";
     background: var(--green-clr);
@@ -283,37 +241,20 @@ p{
     filter: blur(70px);
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 .hover-card:hover{
     background-color: var(--green-clr);
     transform: scale(1.1);
     transition: transform .5s ease-in-out;
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 }
 .hover-card:hover *{
     color: black !important;
 }
 .mycard{
     width: 21rem;
-<<<<<<< HEAD
-=======
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 }
 .mycard:hover{
     transform: scale(1.1);
     transition: transform .5s ease-in-out;
-<<<<<<< HEAD
-=======
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 }
 .blog-card{
     width: 21rem;
@@ -323,10 +264,6 @@ form{
 }
 .form-control{
     border: .1rem solid var(--gray-clr);
-<<<<<<< HEAD
-=======
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 }
 .form-control:focus{
     box-shadow: none;
@@ -348,27 +285,12 @@ form{
     aspect-ratio: 1;
     border-radius: 50%;
     overflow: hidden;
-<<<<<<< HEAD
 }
 
-=======
-
-
-    
-
-}
-
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 .profile img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-<<<<<<< HEAD
-=======
-
-    
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 }
 
 .prev,
@@ -378,13 +300,6 @@ form{
     border-radius: 50%;
 }
 
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 .footer1 {
     color: white;
     background-color: var(--dark-blue-clr);
@@ -393,22 +308,14 @@ form{
     padding: 30px 0;
     margin: 0 15px;
     position: relative;
-<<<<<<< HEAD
 }
 
-.footer1 h3 {
-=======
-    
-  }
-  
   .footer1 h3 {
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
     font-size: 36px;
     font-weight: 700;
     position: relative;
     padding: 0;
     margin: 0 0 15px 0;
-<<<<<<< HEAD
 }
 
 .footer1 p {
@@ -422,9 +329,6 @@ form{
     margin: 0 0 30px 0;
 }
 
-.footer1 .social-links a {
-=======
-  }
   
   .footer1 p {
     font-size: 15;
@@ -438,16 +342,12 @@ form{
   }
   
   .footer1 .social-links a {
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     background: var(--green-clr); /* replaced accent-color with green */
-=======
     background: var(--accent-color);
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
     color: white;
     line-height: 1;
     margin: 0 4px;
@@ -456,7 +356,6 @@ form{
     width: 36px;
     height: 36px;
     transition: 0.3s;
-<<<<<<< HEAD
 }
 
 .footer1 .social-links a:hover {
@@ -474,9 +373,6 @@ form{
     padding-top: 5px;
 }
 
-.card1{
-=======
-  }
   
   .footer1 .social-links a:hover {
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
@@ -495,13 +391,11 @@ form{
   }
 
   .card1{
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
     /* width: 200px; */
     /* height: 5%; */
     margin-left: 180px;
     /* text-align: center; */
     /* border: 1px solid var(--green-clr); */
-<<<<<<< HEAD
 }
 .card1 p{
     margin-left: 30px;
@@ -520,12 +414,6 @@ h2{
     margin-left: 545px;
 }
 
-.card2{
-=======
-    
-    
-    
-  }
   .card1 p{
     margin-left: 30px;
     
@@ -547,16 +435,12 @@ h2{
   }
 
 
-
-
  .card2{
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
-    margin-left: 650px;
-    width: 600px;
+    margin-left: 50px;
+    width: 500px;
     height: 20px;
     display: block;
     margin-bottom: 160px;
-<<<<<<< HEAD
 }
 .card2 h5{
     margin-left: 10px;
@@ -605,10 +489,6 @@ h2{
     border: 2px solid #007BFF;
 }
 
-.accordion {
-=======
-    
- }
 
  .card2 h5{
     margin-left: 10px;
@@ -658,7 +538,6 @@ h2{
 
 
   .accordion {
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
     width: 750px;
     max-width: 800px;
     font-family: Arial, sans-serif;
@@ -686,10 +565,6 @@ h2{
     transition: background 0.3s;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 .accordion-header:hover {
     background: var(--green-clr);
 }
@@ -711,7 +586,6 @@ h2{
 }
 
 
-<<<<<<< HEAD
 /* Media Queries */
 
 @media screen and (max-width: 575px) {
@@ -742,7 +616,7 @@ h2{
     }
 
     .card1 {
-        margin-left: 110px;
+        margin-left: 60px;
         margin-right: 10px;
         width: 300px;
         height: 3px;
@@ -802,24 +676,12 @@ h2{
         margin-left: 70px;
     }
 
-=======
-
-
-
-
-
-
-
 
   
   
 
 
 @media screen and (max-width:575px) {
-
-
-
-    
     
     h1{
         font-size: 2.8rem;
@@ -921,15 +783,10 @@ h2{
         margin-left: 95px;
 
     }
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
     .accordion {
         width: 330px;
         margin: auto;
         height: 50px;
-<<<<<<< HEAD
-=======
-    
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         font-family: Arial, sans-serif;
         background: #f8f9fa;
         margin-bottom: 150px;
@@ -942,21 +799,14 @@ h2{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         overflow: hidden;
     }
-<<<<<<< HEAD
 
-    .accordion-header {
-        background: #02172e;
-        color: white;
-        padding: 7px;
-        font-size: 12px; /* corrected from 9px to 12px as you had two definitions */
-=======
+    
     
     .accordion-header {
         background :#02172e;
         color: white;
         padding: 7px;
         font-size: 9px;
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         cursor: pointer;
         border: none;
         outline: none;
@@ -965,7 +815,6 @@ h2{
         text-align: left;
         transition: background 0.3s;
     }
-<<<<<<< HEAD
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -977,8 +826,7 @@ h2{
 
     .card1 {
         margin-left: 20px;
-=======
-    
+    }
     .accordion-header{
         font-size: 12px;
     }
@@ -1011,49 +859,38 @@ h2{
   
     .card2{
         margin-left: 70px;
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         margin-right: 10px;
         width: 480px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-<<<<<<< HEAD
     }
 
     .card2 {
         margin-left: 30px;
-=======
-
 
     }
     .card3{
         margin-left: 90px;
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         margin-right: 10px;
         width: 480px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-<<<<<<< HEAD
     }
 
     .card3 {
         margin-left: 30px;
-=======
-        
-       
 
        
     }
     .card4{
         margin-left: 80px;
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         margin-right: 10px;
         width: 480px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-<<<<<<< HEAD
     }
 
     .card4 {
@@ -1072,7 +909,6 @@ h2{
     .p6 {
         margin-left: 40px;
     }
-=======
 
     }
 
@@ -1084,16 +920,12 @@ h2{
         margin-left: 80px;
     }
 
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
 
     .accordion {
         width: 450px;
         margin: auto;
-<<<<<<< HEAD
         height: 70px;
-=======
         height: 70px;    
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         font-family: Arial, sans-serif;
         background: #f8f9fa;
         margin-bottom: 130px;
@@ -1106,20 +938,13 @@ h2{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         overflow: hidden;
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
     .accordion-header {
         background: #02172e;
         color: white;
         padding: 7px;
-<<<<<<< HEAD
         font-size: 16px;
-=======
         font-size: 9px;
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         cursor: pointer;
         border: none;
         outline: none;
@@ -1128,46 +953,31 @@ h2{
         text-align: left;
         transition: background 0.3s;
     }
-<<<<<<< HEAD
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .card1 {
-=======
-    
     .accordion-header{
         font-size: 16px;
     }
-}
 
 
 @media screen and (min-width: 768px) and (max-width:991px) {
     .card1{
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         margin-left: 270px;
         margin-right: 20px;
         width: 480px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-<<<<<<< HEAD
     }
 
-    .card2 {
-=======
-    
-    }
-        
-      
     .card2{
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         margin-left: 80px;
         margin-right: 10px;
         width: 480px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-<<<<<<< HEAD
     }
 
     .card3 {
@@ -1239,10 +1049,6 @@ h2{
 /* line 801 */
 
 @media screen and (min-width:992px) and (max-width:1199px) {
-    .card1 {
-=======
-
-    }
         .card3{
             margin-left: 270px;
             margin-right: 20px;
@@ -1320,31 +1126,23 @@ h2{
 
 @media screen and (min-width:992px) and (max-width:1199px){
     .card1{
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         margin-left: 570px;
         margin-right: 10px;
         width: 400px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-<<<<<<< HEAD
     }
 
-    .card2 {
-=======
-    
-    }
         
       
     .card2{
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         margin-left: 80px;
         margin-right: 10px;
         width: 400px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-<<<<<<< HEAD
     }
 
     .card3 {
@@ -1422,10 +1220,6 @@ h2{
 }
 
 @media screen and (min-width:1200px) {
-    .card1 {
-=======
-
-    }
         .card3{
             margin-left: 570px;
             margin-right: 20px;
@@ -1507,31 +1301,21 @@ h2{
 }
 @media screen and (min-width:1200px){
     .card1{
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         margin-left: 510px;
         margin-right: 10px;
         width: 500px;
         height: 3px;
         display: block;
         margin-bottom: 210px;
-<<<<<<< HEAD
     }
 
-    .card2 {
-=======
-    
-    }
-        
-      
     .card2{
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
         margin-left: 70px;
         margin-right: 10px;
         width: 500px;
         height: 3px;
         display: block;
         margin-bottom: 200px;
-<<<<<<< HEAD
     }
 
     .card3 {
@@ -1649,7 +1433,6 @@ h2{
         text-align: center;
       }
     }
-=======
 
     }
         .card3{
@@ -1726,16 +1509,3 @@ h2{
             font-size: 25px;
 
 }
-
-
-}
-
-
-
-
-
-
-
->>>>>>> 119e4f3d57d3dfafbfb607609e31700a5f3570ce
-
-
