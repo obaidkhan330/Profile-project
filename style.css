@@ -107,22 +107,6 @@ img{
     color: black !important;
 }
 
-/* Default Light Mode */
-body {
-    background-color: white;
-    color: black;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-button {
-    padding: 5px 5px;
-    margin: 10px;
-    cursor: pointer;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    font-size: 15px;
-}
 
 /* Dark Mode Styles */
 body.dark-mode {
@@ -164,7 +148,7 @@ body.dark-mode h1, body.dark-mode p {
     border-bottom: 1rem solid white;
     background-image: url(images/profile2.jpeg);
     background-position: center;
-    background-size: 75%;
+    background-size: 100%;
     background-repeat: no-repeat;
     box-shadow: 
         0 0 1rem white,
@@ -173,6 +157,27 @@ body.dark-mode h1, body.dark-mode p {
         inset 0 0 2rem var(--green-clr),
         0 0 6rem var(--green-clr),
         inset 0 0 3rem var(--green-clr);
+}
+.image-container:hover {
+    width: 26rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-top: 1rem solid white;
+    border-bottom: 1rem solid white;
+    background-image: url(images/profile2.jpeg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 
+        0 0 1rem white,
+        inset 0 0 1rem white,
+        0 0 2rem var(--green-clr),
+        inset 0 0 2rem var(--green-clr),
+        0 0 6rem var(--green-clr),
+        inset 0 0 3rem var(--green-clr);
+         transition: all 0.7s ease-in-out;
+         transform: scale(1.2);
+
 }
 
 
@@ -183,13 +188,6 @@ body.dark-mode h1, body.dark-mode p {
 h1{
     font-size: 3rem;
     font-family: "Merriweather Sans", serif;
-    0 0 1rem white,
-    inset 0 0 1rem white,
-    0 0 2rem var(--green-clr),
-    inset 0 0 2rem var(--green-clr),
-    0 0 6rem var(--green-clr),
-    inset 0 0 3rem var(--green-clr)
-    
 }
 .hero-section{
     min-height: 88vh;
@@ -216,6 +214,19 @@ p{
     width: 30rem;
     margin: 0 auto;
     margin-left: 30px;
+}
+.about-me img{
+    width: 32rem;
+    height: 32rem;
+    border-radius: 20px;
+    margin-right: 1rem;
+        box-shadow: #05f053 0px 0px 10px 0px, #05f053 0px 0px 20px 0px;
+
+}
+.about-me img:hover{
+    box-shadow: #05f053 0px 0px 10px 0px, #05f053 0px 0px 20px 0px;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
 }
 /* .myimg{
        size: 200px;
@@ -244,7 +255,7 @@ p{
 .hover-card:hover{
     background-color: var(--green-clr);
     transform: scale(1.1);
-    transition: transform .5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 .hover-card:hover *{
     color: black !important;
@@ -588,95 +599,6 @@ h2{
 
 /* Media Queries */
 
-@media screen and (max-width: 575px) {
-
-    h1 {
-        font-size: 2.8rem;
-    }
-
-    .image-container {
-        width: 20rem;
-    }
-
-    .hero-section {
-        min-height: 70vh;
-    }
-
-    .about-me {
-        width: 18rem;
-        margin-left: 110px;
-    }
-
-    form {
-        width: 18rem;
-    }
-
-    .portfolio {
-        max-width: 22rem;
-    }
-
-    .card1 {
-        margin-left: 60px;
-        margin-right: 10px;
-        width: 300px;
-        height: 3px;
-        display: block;
-        margin-bottom: 210px;
-    }
-
-    .card2 {
-        margin-left: 110px;
-        margin-right: 10px;
-        width: 300px;
-        height: 3px;
-        display: block;
-        margin-bottom: 250px;
-    }
-
-    .card3 {
-        margin-left: 110px;
-        margin-right: 10px;
-        width: 300px;
-        height: 3px;
-        display: block;
-        margin-bottom: 220px;
-    }
-
-    .card4 {
-        margin-left: 110px;
-        margin-right: 10px;
-        width: 300px;
-        height: 3px;
-        display: block;
-        margin-bottom: 250px;
-        /* padding: 10px 20px; */
-    }
-
-    .p5 {
-        margin-left: 50px;
-    }
-
-    .p6 {
-        margin-left: 50px;
-    }
-
-    .card1 h5 {
-        margin-left: 70px;
-    }
-
-    .card2 h5 {
-        margin-left: 70px;
-    }
-
-    .card3 h5 {
-        margin-left: 70px;
-    }
-
-    .card4 h5 {
-        margin-left: 70px;
-    }
-
-
   
   
 
@@ -690,13 +612,41 @@ h2{
     .image-container{
         width: 20rem;
     }
+    .image-container:hover{
+         transition: all 0.7s ease-in-out;
+         transform: scale(0.8);
+         margin-left: 0;
+         margin-top: 0;
+
+    }
 
     .hero-section{
         min-height: 70vh;
     }
     .about-me{
         width: 18rem;
-        margin-left: 80px;
+        
+        margin-left: 25px;
+        margin-right: 25px;
+        flex-wrap: wrap;
+    }
+    .about-me img{
+        width: 21rem;
+        height: 19rem;
+        border-radius: 20px;
+        margin-right: 1rem;
+        margin-left: 0.3rem;
+        box-shadow: #05f053 0px 0px 10px 0px, #05f053 0px 0px 20px 0px;
+        transition: all 0.5s ease-in-out;
+
+
+    }
+    .about-me:hover img{
+        margin-top: 20px;
+        margin-left: 0;
+        box-shadow: #05f053 10px 0px 10px 0px, #05f053 0px 10px 20px 0px;
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
     }
     form{
         width: 18rem;
@@ -953,7 +903,7 @@ h2{
         text-align: left;
         transition: background 0.3s;
     }
-}
+
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .accordion-header{
